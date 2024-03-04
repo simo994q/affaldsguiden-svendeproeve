@@ -30,8 +30,8 @@ export const Hero = () => {
                 <figure className={style.find}>
                     <h1>Find og anmeld genbrugsstationer</h1>
                     <div>
-                        <NavLink>Find station</NavLink>
-                        <NavLink>Log ind </NavLink>
+                        <NavLink to='/stations'>Find station</NavLink>
+                        <NavLink to='/login'>Log ind </NavLink>
                     </div>
                 </figure>
             </div>
