@@ -4,6 +4,7 @@ import { Frontpage } from "./pages/Frontpage/Frontpage"
 import { Sortingpage } from "./pages/Sortingpage/Sortingpage"
 import { Stationspage } from "./pages/Stationspage/Stationspage"
 import { Orderpage } from "./pages/Orderpage/Orderpage"
+import { Loginpage } from "./pages/Loginpage/Loginpage"
 
 function App() {
 
@@ -13,9 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Frontpage />} />
-            <Route index element={<Sortingpage />} />
-            <Route index element={<Stationspage />} />
-            <Route index element={<Orderpage />} />
+            <Route path="/sorting" element={<Sortingpage />} />
+            <Route path="/stations" element={<Stationspage />} />
+            <Route path="/order" element={<Orderpage />} />
+            <Route path="/login" element={<Loginpage />} />
           </Route>
         </Routes>
       </BrowserRouter>
