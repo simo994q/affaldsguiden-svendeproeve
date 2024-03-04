@@ -1,16 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Sortingpage.module.scss'
+import { SortingCard } from '../../components/SortingCard/SortingCard'
 
 export const Sortingpage = () => {
+
+  const [sections, setSections] = useState()
+
+  useEffect(() => {
+    fetch('http://localhost:3000/section')
+      .then(res => res.json())
+      .then(data => setSections(data))
+  }, [])
+
+  console.log(sections)
+
   return (
     <>
       <div className={style.hero}>
         <h1>Din guide</h1>
-        <h2>Til end sund affaldssortering</h2>
-        <input type="text" placeholder='Søg på affald'/>
+        <h2>Til en sund affaldssortering</h2>
+        <form>
+          <input type="text" placeholder='Søg på affald' />
+        </form>
       </div>
-      <div>
-
+      <div className={style.cards}>
+        {sections ?
+          <>
+            {sections.map((section) => {
+              return <SortingCard key={section.id} data={section} />
+            })}
+          </>
+          :
+          <>Loading...</>
+        }
       </div>
     </>
   )
