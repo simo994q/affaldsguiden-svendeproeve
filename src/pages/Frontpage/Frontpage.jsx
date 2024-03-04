@@ -10,6 +10,7 @@ export const Frontpage = () => {
       <Hero />
       <FrontpageSectionOne />
       <FrontpageSectionTwo />
+      <img className={style.wave} src="/src/assets/images/layout/bg-wave-1.svg" alt="" />
     </>
   )
 }
