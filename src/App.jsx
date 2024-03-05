@@ -8,6 +8,7 @@ import { Loginpage } from "./pages/Loginpage/Loginpage"
 import { Sectionpage } from "./pages/Sectionpage/Sectionpage"
 import { Searchpage } from "./pages/Searchpage/Searchpage"
 import { UserContextProvider } from "./context/UserContextProvider"
+import { Stationpage } from "./pages/Stationpage/Stationpage"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="/sorting/:section_id" element={<Sectionpage />} />
               <Route path="/sorting/search/:query" element={<Searchpage />} />
               <Route path="/stations" element={<Stationspage />} />
+              <Route path="/stations/:id" element={<Stationpage />} />
               <Route path="/order" element={<Orderpage />} />
               <Route path="/login" element={<Loginpage />} />
             </Route>
