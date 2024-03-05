@@ -1,0 +1,109 @@
+.wrapper {
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 16px 0px #99999988;
+    border-radius: 1rem;
+    position: relative;
+
+    .infoHeader {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+
+        img {
+            border-radius: 1rem;
+            max-height: 100px;
+        }
+
+        h1 {
+            color: #414141;
+            font-size: 1.75rem;
+        }
+    }
+
+    .fullInfoWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        .infoWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                text-align: center;
+                color: #222A41;
+                font-size: 1.25rem;
+            }
+
+            hr {
+                width: 80%;
+                margin: auto;
+            }
+
+            .allowedSection {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.25rem;
+                width: 80%;
+                margin: auto;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items: center;
+
+                    .title {
+                        font-weight: 600;
+                    }
+
+                    .titleInfo {
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+
+            .notAllowedSection {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.25rem;
+                width: 80%;
+                margin: auto;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items: center;
+
+                    .title {
+                        font-weight: 600;
+                    }
+
+                    .titleInfoNo {
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 0.5rem;
+                        background-color: #ff3333;
+                    }
+                }
+            }
+        }
+    }
+
+    .openArrow {
+        background-color: #414141;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 50%;
+        cursor: pointer;
+    }
+}
