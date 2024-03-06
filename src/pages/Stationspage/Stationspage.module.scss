@@ -5,3 +5,22 @@
     margin: 4rem auto;
     gap: 2rem 4rem;
 }
+
+@media (max-width: 1064px) {
+    .wrapper {
+        padding: 0 2rem;
+        gap: 2rem 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

@@ -83,6 +83,45 @@
 
         .reviews {
             margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem 3rem;
+        }
+    }
+}
+
+@media (max-width: 864px) {
+    .wrapper {
+        margin: 4rem 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        .reviewWrapper {
+            .addReview {
+                text-align: center;
+
+                .stars {
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    .starImgs {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        .reviewWrapper {
+            .addReview {
+                padding: 0;
+            }
         }
     }
 }

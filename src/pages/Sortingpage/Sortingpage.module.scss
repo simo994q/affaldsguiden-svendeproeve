@@ -7,20 +7,21 @@
 
     h1 {
         color: #119B1E;
+        text-align: center;
     }
 
     h2 {
         color: #0E4F2D;
+        text-align: center;
     }
 
     input {
-        border-radius: 100000000000000000000000000000000000000000000000000px; 
+        border-radius: 100000000000000000000000000000000000000000000000000px;
         // gad vide om kasper eller censor vil spørge hvorfor border radius er så stor
         font-size: 1.15rem;
         border: none;
         box-shadow: 0px 4px 10px 0px gray;
         padding: 1rem 1.5rem;
-        min-width: 300px;
         outline: none;
     }
 }
@@ -34,4 +35,23 @@
     justify-content: center;
     row-gap: 4rem;
     column-gap: 2rem;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1064px) {
+    .cards {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
