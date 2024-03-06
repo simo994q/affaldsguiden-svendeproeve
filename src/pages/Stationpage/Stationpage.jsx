@@ -20,6 +20,7 @@ export const Stationpage = () => {
     const [comment, setComment] = useState('')
 
     const [refresh, setRefresh] = useState(false)
+    console.log(stationReviews);
 
     useEffect(() => {
         fetch(`http://localhost:3000/orgs/${id}`)
@@ -135,7 +136,7 @@ export const Stationpage = () => {
                                             <>
                                                 {
                                                     stationReviews.map((review) => {
-                                                        return <Review content={review} />
+                                                        return <Review key={review.id} content={review} />
                                                     })
                                                 }
                                             </>
