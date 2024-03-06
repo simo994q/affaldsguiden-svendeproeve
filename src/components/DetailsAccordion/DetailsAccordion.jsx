@@ -56,7 +56,7 @@ export const DetailsAccordion = ({ details }) => {
                         <h2>Hvad modtager vi?</h2>
                         <hr />
                         <div className={style.allowedSection}>
-                            {
+                            {Allowed.length ? 
                                 Allowed.map((type) => {
                                     return (
                                         <div key={type.id}>
@@ -65,6 +65,8 @@ export const DetailsAccordion = ({ details }) => {
                                         </div>
                                     )
                                 })
+                                :
+                                <>Intet data</>
                             }
                         </div>
                     </div>
@@ -72,7 +74,7 @@ export const DetailsAccordion = ({ details }) => {
                         <h2>Hvad modtager vi ikke?</h2>
                         <hr />
                         <div className={style.notAllowedSection}>
-                            {
+                            {notAllowed.length ? 
                                 notAllowed.map((type) => {
                                     return (
                                         <div key={type.id}>
@@ -81,6 +83,8 @@ export const DetailsAccordion = ({ details }) => {
                                         </div>
                                     )
                                 })
+                                :
+                                <>Intet data</>
                             }
                         </div>
                     </div>

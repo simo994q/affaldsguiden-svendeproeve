@@ -38,7 +38,7 @@ export const Sectionpage = () => {
                             <img src={sectionData.filepath} alt="" />
                         </div>
                         <div className={style.detailsWrapper}>
-                            {sectionCategories ?
+                            {sectionCategories.length ?
                                 <>
                                     {sectionCategories.map((item) => {
                                         return <DetailsAccordion  key={item.id} details={item} />
