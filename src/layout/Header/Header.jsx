@@ -16,11 +16,11 @@ export const Header = () => {
           <li><NavLink to='/stations'>Genbrugsstationer</NavLink></li>
           <li><NavLink to='/order'>Bestil beholder</NavLink></li>
         </ul>
-        <div className={style.login}>
-          <NavLink to='/login'>
+        <NavLink to='/login'>
+          <div className={style.login}>
             <img src="/src/assets/images/layout/icon-unlock.svg" alt="Login" />
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
       </div>
     </>
   )
