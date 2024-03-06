@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './Hero.module.scss'
 import Carousel from 'react-material-ui-carousel'
 import { NavLink } from 'react-router-dom'
@@ -19,7 +19,7 @@ export const Hero = () => {
                     animation={'slide'}
                     duration={1000}
                     interval={5000}
-                    height={400}
+                    height={450}
                 >
                     {
                         images.map((img, i) => {

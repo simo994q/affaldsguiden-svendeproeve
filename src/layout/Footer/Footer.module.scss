@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 
     .info {
         display: flex;
@@ -51,6 +52,17 @@
 
         p {
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        padding: 1rem 2rem;
+        flex-direction: column;
+
+        .backTop {
+            align-self: self-end;
         }
     }
 }

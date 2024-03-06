@@ -34,14 +34,68 @@
         }
     }
 
+    .burgerNav {
+        list-style: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        padding: 0 1rem;
+        z-index: 9999;
+
+
+
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+    .open {
+        display: none;
+        background-color: gray;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
     .login {
         background-color: #D8EADB;
         border-radius: 50%;
         padding: 0.5rem;
-        
+
         img {
             height: 14px;
             width: 14px;
         }
     }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .nav {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
 }

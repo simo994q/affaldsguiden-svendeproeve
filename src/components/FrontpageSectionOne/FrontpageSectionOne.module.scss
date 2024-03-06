@@ -19,9 +19,6 @@
             }
         }
 
-
-        p {}
-
         .buttons {
             display: flex;
             gap: 2rem;
@@ -48,5 +45,33 @@
     img {
         width: 100%;
         max-width: 400px;
+    }
+}
+
+@media (max-width: 1064px) {
+    .wrapper {
+        padding: 0 2rem;
+        margin-bottom: 100px;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 0 2rem;
+        margin-bottom: 100px;
+        gap: 4rem;
+
+        .info {
+            max-width: 600px;
+        }
+
+        img {
+            max-width: 600px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
     }
 }
