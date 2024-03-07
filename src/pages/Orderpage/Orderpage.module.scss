@@ -1,0 +1,12 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1000px;
+    margin: 4rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .stepWrapper {
+        background-color: #114D46;
+    }
+}

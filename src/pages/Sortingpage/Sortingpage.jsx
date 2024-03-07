@@ -34,6 +34,7 @@ export const Sortingpage = () => {
           <>Loading...</>
         }
       </div>
+      <img style={{width: '100%'}} src="/src/assets/images/layout/bg-waves-1.svg" alt="" />
     </>
   )
 }

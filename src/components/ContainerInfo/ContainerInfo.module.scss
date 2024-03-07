@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: #DCDCDC;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    h2 {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    h1 {
+        color: #2F3146;
+        font-weight: 400;
+    }
+
+    p {
+        color: #5F5F63;
+    }
+
+    .containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 4rem;
+        gap: 1rem;
+    }
+}

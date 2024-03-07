@@ -41,7 +41,7 @@ export const Sectionpage = () => {
                             {sectionCategories.length ?
                                 <>
                                     {sectionCategories.map((item) => {
-                                        return <DetailsAccordion  key={item.id} details={item} />
+                                        return <DetailsAccordion key={item.id} details={item} />
                                     })}
                                 </>
                                 :
@@ -53,6 +53,7 @@ export const Sectionpage = () => {
                 :
                 <>Loading...</>
             }
+            <img style={{width: '100%'}} src="/src/assets/images/layout/bg-wave-1.svg" alt="" />
         </>
     )
 }

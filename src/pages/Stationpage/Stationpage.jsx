@@ -156,6 +156,7 @@ export const Stationpage = () => {
                 }
 
             </div>
+            <img style={{width: '100%'}} src="/src/assets/images/layout/bg-wave-1.svg" alt="" />
             <ToastContainer />
         </>
     )
