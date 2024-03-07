@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import style from './ContainerInfo.module.scss'
 import { ContainerType } from '../ContainerType/ContainerType'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export const ContainerInfo = () => {
+export const ContainerInfo = ({ selected, setSelected, setStep }) => {
 
   const [types, setTypes] = useState()
-  const [selected, setSelected] = useState()
 
   useEffect(() => {
     fetch('http://localhost:3000/containers')
@@ -27,11 +28,20 @@ export const ContainerInfo = () => {
               })}
             </>
             :
-            <>Loading...</> 
+            <>Loading...</>
           }
         </div>
-        <button>Videre</button>
+        <button className={style.next}
+          onClick={() => {
+            if (selected) {
+              setStep(2)
+            } else {
+              toast('Vælg type for at gå videre')
+            }
+          }}
+        >Videre</button>
       </div>
+      <ToastContainer />
     </>
   )
 }

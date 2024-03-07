@@ -6,6 +6,7 @@ import { ShippingInfo } from '../../components/ShippingInfo/ShippingInfo'
 export const Orderpage = () => {
 
   const [step, setStep] = useState(1)
+  const [selected, setSelected] = useState()
 
   return (
     <>
@@ -14,9 +15,9 @@ export const Orderpage = () => {
 
         </div>
         {step === 1 ?
-          <ContainerInfo />
+          <ContainerInfo selected={selected} setSelected={setSelected} setStep={setStep} />
           :
-          <ShippingInfo />
+          <ShippingInfo selected={selected} />
         }
       </div>
       <img style={{ width: '100%' }} src="/src/assets/images/layout/bg-wave-1.svg" alt="" />
