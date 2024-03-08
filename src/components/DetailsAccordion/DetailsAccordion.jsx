@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from './DetailsAccordion.module.scss'
 
 export const DetailsAccordion = ({ details }) => {
-    const { title, image_filepath, types } = details
+    const { title, image_filepath, icon_filepath, types } = details
 
     let notAllowed = []
     let Allowed = []
@@ -48,7 +48,7 @@ export const DetailsAccordion = ({ details }) => {
         <>
             <div className={style.wrapper}>
                 <div className={style.infoHeader}>
-                    <img src={image_filepath} alt="" />
+                    <img src={icon_filepath} alt="" />
                     <h1>{title}</h1>
                 </div>
                 <div style={{display: isOpen ? 'flex' : 'none'}} className={style.fullInfoWrapper}>
