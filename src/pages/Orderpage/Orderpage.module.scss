@@ -8,6 +8,13 @@
 
     .stepWrapper {
         background-color: #114D46;
+        position: relative;
+
+        .steps {
+            position: absolute;
+            right: 16px;
+            top: 3rem;
+        }
     }
 }
 

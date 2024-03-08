@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .numberWrapper {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        padding: 0.25rem;
+
+        .number {
+            width: 34px;
+            background-color: #D8EADB;
+            height: 34px;
+            border-radius: 50%;
+            text-align: center;
+            display: grid;
+            place-items: center;
+        }
+
+    }
+
+    .line {
+        background-color: #D8EADB;
+        height: 24px;
+        width: 3px;
+    }
+}

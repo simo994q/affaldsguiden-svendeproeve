@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { UserContext } from '../../context/UserContextProvider';
 
-export const ShippingInfo = ({ selected }) => {
+export const ShippingInfo = ({ selected, setStep }) => {
 
   const { user } = useContext(UserContext)
 
@@ -58,26 +58,31 @@ export const ShippingInfo = ({ selected }) => {
           <input type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
           <input type="text" placeholder='Telefon' onChange={(e) => setPhone(e.target.value)} />
         </form>
-        <button className={style.next}
-          onClick={() => {
-            if (!user) {
-              toast('Du skal være logget ind')
-            } else {
-              if (
-                name !== '' &&
-                address !== '' &&
-                zip !== '' &&
-                city !== '' &&
-                email !== '' &&
-                phone !== ''
-              ) {
-                handleSubmit()
+        <div className={style.buttons}>
+          <button
+            onClick={() => setStep(1)}
+            className={style.next}>Tilbage</button>
+          <button className={style.next}
+            onClick={() => {
+              if (!user) {
+                toast('Du skal være logget ind')
               } else {
-                toast('Udfyld alle felter')
+                if (
+                  name !== '' &&
+                  address !== '' &&
+                  zip !== '' &&
+                  city !== '' &&
+                  email !== '' &&
+                  phone !== ''
+                ) {
+                  handleSubmit()
+                } else {
+                  toast('Udfyld alle felter')
+                }
               }
-            }
-          }}
-        >Send</button>
+            }}
+          >Send</button>
+        </div>
       </div>
       <ToastContainer />
     </>
