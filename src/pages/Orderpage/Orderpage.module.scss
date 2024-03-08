@@ -10,3 +10,15 @@
         background-color: #114D46;
     }
 }
+
+@media (max-width: 1064px) {
+    .wrapper {
+        margin: 4rem 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+    }
+}

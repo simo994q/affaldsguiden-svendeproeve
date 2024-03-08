@@ -30,6 +30,7 @@
             border: 2px solid #EDEDED;
             border-radius: 0.25rem;
             color: #353535;
+            width: 100%;
         }
     }
 
@@ -44,5 +45,14 @@
         color: #0E4F2D;
         font-size: 1rem;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+        p {
+            font-size: 0.85rem;
+        }
     }
 }

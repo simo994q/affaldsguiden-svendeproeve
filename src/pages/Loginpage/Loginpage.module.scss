@@ -86,3 +86,30 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 800px) {
+    .wrapper {
+        gap: 1rem;
+
+        .textWrapper {
+            margin: 0.5rem;
+        }
+        form {
+            margin: 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+
+        .textWrapper {
+            margin: 0rem 3rem;
+        }
+        form {
+            margin: 0rem 3rem;
+        }
+    }
+}

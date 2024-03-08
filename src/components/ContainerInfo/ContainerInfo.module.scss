@@ -39,3 +39,23 @@
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 900px) {
+    .wrapper {
+        .containers {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+        .containers {
+            grid-template-columns: 1fr;
+        }
+        p {
+            font-size: 0.85rem;
+        }
+    }
+}
