@@ -3,8 +3,6 @@ import style from './ContainerType.module.scss'
 
 export const ContainerType = ({ data, selected, setSelected }) => {
 
-  console.log(data);
-
   return (
     <>
       <div

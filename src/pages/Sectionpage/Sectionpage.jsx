@@ -25,9 +25,6 @@ export const Sectionpage = () => {
         }
     }, [sectionData])
 
-    console.log(sectionData);
-    console.log(sectionCategories);
-
     return (
         <>
             {sectionData ?

@@ -20,7 +20,6 @@ export const Stationpage = () => {
     const [comment, setComment] = useState('')
 
     const [refresh, setRefresh] = useState(false)
-    console.log(stationReviews);
 
     useEffect(() => {
         fetch(`http://localhost:3000/orgs/${id}`)

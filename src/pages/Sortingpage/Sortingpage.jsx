@@ -12,8 +12,6 @@ export const Sortingpage = () => {
       .then(data => setSections(data))
   }, [])
 
-  console.log(sections)
-
   return (
     <>
       <div className={style.hero}>

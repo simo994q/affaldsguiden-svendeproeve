@@ -32,7 +32,6 @@ export const Loginpage = () => {
     fetch('http://localhost:3000/login', options)
       .then(res => res.json())
       .then(data => setUser(data))
-
   }
 
   return (
