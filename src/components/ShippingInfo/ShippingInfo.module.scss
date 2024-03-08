@@ -56,8 +56,15 @@
 @media (max-width: 600px) {
     .wrapper {
         padding: 1rem;
+
         p {
             font-size: 0.85rem;
+        }
+
+        .buttons {
+            .next {
+                padding: 0.5rem 1.25rem;
+            }
         }
     }
 }
